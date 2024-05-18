@@ -25,7 +25,7 @@ const NavBarComponent = () => {
                             <NavDropdown.Item href="#action/3.3">Nike</NavDropdown.Item>
                             <NavDropdown.Divider />
                             <NavDropdown.Item href="#action/3.4">
-                                Nuevas proximamente
+                                Nuevos modelos proximamente
                             </NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
