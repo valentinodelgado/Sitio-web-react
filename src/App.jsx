@@ -1,8 +1,6 @@
 import { useState } from 'react'
 
-import ButtonComponent from './components/ButtonComponent/ButtonComponent'
-import NavBarComponent from './components/NavBarComponent/NavBarComponent'
-import ItemListContainerComponent from './components/ItemListContainerComponent/ItemListContainerComponent'
+import MainRoutes from './routes/MainRoutes'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -10,8 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <div>
-      <NavBarComponent />
-      <ItemListContainerComponent greeting="Hello World!" />
+      <MainRoutes />
     </div>
     );
 }
