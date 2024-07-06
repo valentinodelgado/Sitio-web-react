@@ -1,21 +1,24 @@
 import { height, width } from '@fortawesome/free-brands-svg-icons/fa42Group'
-import React, { useEffect, useState } from 'react';
-import { getAllProducts } from '../../services/productServices';
+import React, { useEffect, useState, useContext } from 'react';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { Link } from 'react-router-dom'; 
+import { CartContext } from '../../context/CartContext';
+
+
 
 const ItemListContainerComponent = ({products}) => {
 
     const randomStyles = {
         width: "100%",
-        height: "380vh",
+        height: "160vh",
         display: "flex",
         flexDirection: "row",
         flexWrap: "wrap",
         justifyContent: "space-around",
         alignItems: "center",  // Alinea el contenido también verticalmente
     };
+
 
 
 
@@ -30,8 +33,7 @@ const ItemListContainerComponent = ({products}) => {
                             <Card.Text>
                                 {product.description}
                             </Card.Text>
-                            <Button variant="primary">Comprar</Button>
-                            <Link to={`/item/${product.id}`} style={{textDecoration: "none", color: "grey", marginLeft: "4vw"}}>Ir al detalle</Link>
+                            <Link to={`/item/${product.id}`} style={{textDecoration: "none", color: "green", marginLeft: "4vw"}}>Ir al detalle</Link>
                         </Card.Body>
                     </Card>
                 );
